@@ -2,76 +2,130 @@ import React from "react";
 
 const UserTesting = () => {
   return (
-    <section className="py-10 px-6">
-        <div className="px-96">
-      <h3 className="text-2xl md:w-[425px] h-[47px] font-custom2 font-semibold text-[36px] leading-[46.8px] text-center">The User Testing Process</h3>
-      <p className="w-[378px] h-[48px] font-custom font-normal text-[16px] leading[24px] text-center">Participating in Oikus’ user testing is straightforward. <br />Here's how you can contribute:</p>
-      </div>
-      {/* one */}
-      <div className="md:flex justify-around items-center my-10">
-        <div className="w-[520px] h-[317px]">
-        <img src="/images/Frame 1618869027.png" alt="laptop and phone" />
-        </div>
+    <section className="py-10 px-6 flex flex-col items-center">
+  <div className="max-w-[1236px] mx-auto">
+    {/* Title */}
+    <div className="text-center">
+      <h3 className="text-2xl font-polysans font-semibold text-[32px] md:text-[36px] leading-[42px] md:leading-[46.8px]">
+        The User Testing Process
+      </h3>
+      <p className="font-lato font-normal text-[16px] leading-[20px] mt-2 max-w-[90%] md:max-w-[80%] mx-auto">
+        Participating in Oikus’ user testing is straightforward. <br />
+        Here's how you can contribute:
+      </p>
+    </div>
 
-        <div className="">
-        <img src="/images/Group 1000001282.png" alt="number 1" />
-          <h4 className="font-custom2 font-semibold text-[24px] leading-[31.2px] w-[190px] h-[31px]">Select a Platform</h4>
-           <ul className="list-disc w-[529px] h-[96px] font-custom font-normal text-[16px] leading-[24px]">
-            <li>Web Prototype: Click on the "Test Web Prototype" button to access our web-based interface.</li>
-            <li>Mobile Prototype: Click on the "Test Mobile Prototype" button to explore our mobile app interface.</li>
-           </ul>
-           <div className="mt-4 flex gap-[10px]">
-            <button className="bg-primaryColor text-white px-4 py-2 rounded w-[193px] h-[54px]">Test Web Prototype</button>
-            <button className="border-primaryColor text-primaryColor font-custom text-[16px] leading-[19.2px] text-center border-2 px-4 py-2 rounded w-[193px] h-[54px]">Test Mobile Prototype</button>
-          </div>
-        </div>
+    {/* Step 1 */}
+    <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-6 md:gap-[80px] my-10">
+      <div className="w-full md:w-[50%]">
+        <img
+          src="/images/Frame 1618869027.png"
+          alt="laptop and phone"
+          className="w-full max-w-full h-auto rounded-lg"
+        />
       </div>
 
-      {/* two */}
-      <div className="md:flex justify-around items-center my-10">
-      <div className="">
-      <img src="/images/Group 1000001282 (1).png" alt="number 2" />
-          <h4 className="font-custom2 font-semibold text-[24px] leading-[31.2px] w-[242px] h-[31px]">Explore the Prototype</h4>
-           <ul className="list-disc w-[529px] h-[72px] font-custom font-normal text-[16px] leading-[24px]">
-            <li>Interact with the chosen prototype as you would with a live product.</li>
-            <li>Navigate through features, perform tasks, and experience the user interface.</li>
-           </ul>
-        </div>
-
-        <div className="w-[628px] h-[397px]">
-        <img src="/images/woman.png" alt="woman smilling" />
-        </div>
-      </div>
-
-      {/* three */}
-      <div className="md:flex justify-around items-center my-10">
-        <div className="w-[628px] h-[397px]">
-        <img src="/images/rate.png" alt="rateing" />
-        </div>
-
-        <div className="">
-        <img src="/images/Group 1000001282 (2).png" alt="number 3" />
-          <h4 className="font-custom2 font-semibold text-[24px] leading-[31.2px] w-[197px] h-[31px]">Provide Feedback</h4>
-           <ul className="list-disc w-[529px] h-[96px] font-custom font-normal text-[16px] leading-[24px]">
-            <li>After testing, click on the "Take the Survey" button to share your thoughts.</li>
-            <li>Complete the brief survey to help us understand your experience and identify areas for improvement.</li>
-           </ul>
+      <div className="w-full md:w-[50%]">
+        <img
+          src="/images/Group 1000001282.png"
+          alt="number 1"
+          className="mb-4 mx-auto md:mx-0"
+        />
+        <h4 className="font-polysans font-semibold text-[22px] md:text-[24px] leading-[30px]">
+          Select a Platform
+        </h4>
+        <ul className="list-disc pl-5 text-left font-lato font-normal text-[16px] leading-[24px] max-w-[90%] md:max-w-[80%] mx-auto md:mx-0">
+          <li>Web Prototype: Click on the "Test Web Prototype" button to access our web-based interface.</li>
+          <li>Mobile Prototype: Click on the "Test Mobile Prototype" button to explore our mobile app interface.</li>
+        </ul>
+        <div className="mt-4 flex flex-wrap gap-4 justify-center md:justify-start font-lato">
+          <button className="bg-primaryColor text-white px-6 py-3 rounded">
+            Test Web Prototype
+          </button>
+          <button className="border-2 border-primaryColor text-primaryColor px-6 py-3 rounded">
+            Test Mobile Prototype
+          </button>
         </div>
       </div>
+    </div>
 
-      {/* four */}
-      <div className="md:flex justify-around items-center my-10">
-      <div className="">
-          <h4 className="font-custom2 font-semibold text-[32px] leading-[38.4px] w-[584px] h-[38px]">Thank You for Choosing to Participate</h4>
-           <p className="w-[584px] h-[81px] font-custom font-normal text-[18px] leading-[27px]">We sincerely appreciate your time and effort in testing Oikus. Your feedback is invaluable in helping us enhance the house hunting and renting experience in Nigeria.</p> <br />
-           <p className="w-[584px] h-[81px] font-custom font-normal text-[18px] leading-[27px]">If you have any questions or need further assistance, please don't hesitate to contact us:</p>
-        </div>
-
-        <div className="w-[412px] h-[412px]">
-        <img src="/images/thankyou.png" alt="thank you" />
-        </div>
+    {/* Step 2 */}
+    <div className="flex flex-col md:flex-row-reverse items-center text-center md:text-left gap-6 md:gap-[60px] my-10">
+      <div className="w-full md:w-[50%]">
+        <img
+          src="/images/woman.png"
+          alt="woman smiling"
+          className="w-full max-w-full h-auto rounded-lg"
+        />
       </div>
-    </section>
+
+      <div className="w-full md:w-[50%]">
+        <img
+          src="/images/Group 1000001282 (1).png"
+          alt="number 2"
+          className="mb-4 mx-auto md:mx-0"
+        />
+        <h4 className="font-polysans font-semibold text-[22px] md:text-[24px] leading-[30px]">
+          Explore the Prototype
+        </h4>
+        <ul className="list-disc pl-5 text-left font-lato font-normal text-[16px] leading-[24px] max-w-[90%] md:max-w-[80%] mx-auto md:mx-0">
+          <li>Interact with the chosen prototype as you would with a live product.</li>
+          <li>Navigate through features, perform tasks, and experience the user interface.</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Step 3 */}
+    <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-6 md:gap-[60px] my-10">
+      <div className="w-full md:w-[50%]">
+        <img
+          src="/images/rate.png"
+          alt="rating"
+          className="w-full max-w-full h-auto rounded-lg"
+        />
+      </div>
+
+      <div className="w-full md:w-[50%]">
+        <img
+          src="/images/Group 1000001282 (2).png"
+          alt="number 3"
+          className="mb-4 mx-auto md:mx-0"
+        />
+        <h4 className="font-polysans font-semibold text-[22px] md:text-[24px] leading-[30px]">
+          Provide Feedback
+        </h4>
+        <ul className="list-disc pl-5 text-left font-lato font-normal text-[16px] leading-[24px] max-w-[90%] md:max-w-[80%] mx-auto md:mx-0">
+          <li>After testing, click on the "Take the Survey" button to share your thoughts.</li>
+          <li>Complete the brief survey to help us understand your experience and identify areas for improvement.</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Step 4 */}
+    <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-6 md:gap-[80px] my-10">
+      <div className="w-full md:w-[50%]">
+        <h4 className="font-polysans font-semibold text-[26px] md:text-[32px] leading-[34px] md:leading-[38.4px] max-w-[90%] md:max-w-[80%] mx-auto md:mx-0">
+          Thank You for Choosing to Participate
+        </h4>
+        <p className="mt-4 font-lato font-normal text-[16px] md:text-[18px] leading-[25px] md:leading-[27px] max-w-[90%] md:max-w-[80%] mx-auto md:mx-0">
+          We sincerely appreciate your time and effort in testing Oikus. Your feedback is invaluable in helping us enhance the house hunting and renting experience in Nigeria.
+        </p>
+        <p className="mt-4 font-lato font-normal text-[16px] md:text-[18px] leading-[25px] md:leading-[27px] max-w-[90%] md:max-w-[80%] mx-auto md:mx-0">
+          If you have any questions or need further assistance, please don't hesitate to contact us.
+        </p>
+      </div>
+
+      <div className="w-full md:w-[40%]">
+        <img
+          src="/images/thankyou.png"
+          alt="thank you"
+          className="w-full max-w-full h-auto rounded-lg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
   );
 };
 

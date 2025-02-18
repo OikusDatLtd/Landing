@@ -2,23 +2,48 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="pb-10 px-6">
-      <div className="md:flex justify-around items-center">
-        <div className="">
-          <h1 className="font-custom2 font-semibold text-[48px] leading-[62.4px] w-[628px] h-[124px]">Help Us Shape the Future of Oikus</h1>
-          <p className="font-custom text-[18px] font-normal leading-[27px] w-[433px] h-[54px]">Participate in our user testing by exploring our web or mobile prototypes and share your valuable feedback.</p>
-          <div className="mt-4 flex gap-[20px] mb-3">
-            <button className="bg-primaryColor text-white py-[10px] px-[20px] rounded w-[193px] h-[54px]">Test Web Prototype</button>
-            <button className="border-primaryColor border-2 py-[10px] px-[20px] rounded w-[200px] h-[54px]">Test Mobile Prototype</button>
-          </div>
-          <div className="flex gap-[8px]">
-          <img className="w-[20px] h-[20px]" src="/images/info-circle.png" alt="info icon"/>
-          <small className="font-custom font-normal text-[14px] leading-[21px] w-[246px] h-[42px]">For proper functioning of the prototype, <br /> the test must be carried out on desktop</small>
+    <section className="px-20 mb-20 mt-7 flex flex-col lg:flex-row items-center justify-center text-center lg:text-left">
+      {/* Text Content */}
+      <div className="max-w-[600px] lg:mr-12">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-[59px] font-polysans">
+          Help Us Shape the Future of Oikus
+        </h1>
+
+        <p className="text-sm sm:text-base md:text-lg mt-3 max-w-[600px] sm:max-w-[700px] md:max-w-[800px] font-lato">
+          Participate in our user testing by exploring our web or mobile prototypes and share your valuable feedback.
+        </p>
+
+        <div className="mt-5 font-lato flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <button className="bg-primaryColor text-white text-sm sm:text-base md:text-lg py-3 px-6 rounded">
+            Test Web Prototype
+          </button>
+          <button className="border-2 border-[#12AF9B] text-[#12AF9B] text-sm sm:text-base md:text-lg py-3 px-6 rounded">
+  Test Mobile Prototype
+</button>
+
         </div>
+
+        <div className="flex items-start  gap-2 mt-4 justify-center lg:justify-start">
+          <img className="w-5 h-5" src="/images/info-circle.png" alt="info icon" />
+          <small className=" font-lato text-sm sm:text-base md:text-lg max-w-[350px] sm:max-w-[450px] md:max-w-[600px] font-lato">
+            For proper functioning of the prototype, the test must be carried out on desktop.
+          </small>
         </div>
+      </div>
+
+      {/* Image Section */}
+      <div className="relative mt-10 lg:mt-0 flex justify-center">
         <div className="relative">
-        <img className="w-[590.74px] h-[383.98px] top-[60.25px] left-[713px]" src="/images/calender.png" alt="calender pic" />
-        <img className="w-[370.45px] h-[206.87px] absolute top-60 left-20" src="/images/animi.png" alt="lady" />
+          <img
+            className="w-[590px] h-[384px] object-cover"
+            src="/images/calender.png"
+            alt="Calendar"
+          />
+          <img
+            className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 w-[350px] object-cover"
+            src="/images/animi.png"
+            alt="Lady"
+          />
         </div>
       </div>
     </section>

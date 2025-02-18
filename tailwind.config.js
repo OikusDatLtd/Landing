@@ -5,8 +5,8 @@ module.exports = {
     theme: {
       extend: {
         fontFamily: {
-          custom: ['Lato'],
-          custom2:['PolySans'],
+          polysans: ['polysans', 'sans-serif'],
+          lato:['lato','sans-serif'],
         },
         colors: {
           primaryColor: '#12AF9B',
