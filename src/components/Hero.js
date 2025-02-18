@@ -2,9 +2,9 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="px-20 mb-20 mt-7 flex flex-col lg:flex-row items-center justify-center text-center lg:text-left">
+    <section className=" px-20 mb-20 mt-7 flex flex-col lg:flex-row items-center justify-center text-center lg:text-left">
       {/* Text Content */}
-      <div className="max-w-[600px] lg:mr-12">
+      <div className=" max-w-[600px] lg:mr-12">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-[59px] font-polysans">
           Help Us Shape the Future of Oikus
         </h1>
@@ -35,7 +35,7 @@ const Hero = () => {
       <div className="relative mt-10 lg:mt-0 flex justify-center">
         <div className="relative">
           <img
-            className="w-[590px] h-[384px] object-cover"
+            className=" object-cover"
             src="/images/calender.png"
             alt="Calendar"
           />
