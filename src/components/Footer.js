@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col items-start">
           <img
             className="w-[159px] h-[49px]"
-            src="/images/OikusDat logo_Positive Landscape.png"
+            src={`${process.env.PUBLIC_URL}/images/OikusDat logo_Positive Landscape.png`}
             alt="OikusDat logo"
           />
           <div className="mt-4 flex gap-4">
@@ -17,24 +17,36 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/images/linkedin.png" alt="LinkedIn" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/linkedin.png`}
+                alt="LinkedIn"
+              />
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=61561300087533"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/images/facebook.png" alt="Facebook" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/facebook.png`}
+                alt="Facebook"
+              />
             </a>
             <a
               href="https://www.instagram.com/oikusafrica?igsh=MWQydDJ4bXM3MWdrNA%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/images/Instagram.png" alt="Instagram" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/Instagram.png`}
+                alt="Instagram"
+              />
             </a>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-              <img src="/images/Youtube.png" alt="YouTube" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/Youtube.png`}
+                alt="YouTube"
+              />
             </a>
           </div>
         </div>
@@ -67,7 +79,7 @@ const Footer = () => {
       <div className="max-w-[1185px] mx-auto flex justify-start">
         <img
           className="w-[109.82px] h-[40px]"
-          src="/images/Frame 1618868690.png"
+          src={`${process.env.PUBLIC_URL}/images/Frame 1618868690.png`}
           alt="Yahdom logo"
         />
       </div>

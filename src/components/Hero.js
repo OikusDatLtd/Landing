@@ -18,14 +18,13 @@ const Hero = () => {
             Test Web Prototype
           </button>
           <button className="border-2 border-[#12AF9B] text-[#12AF9B] text-sm sm:text-base md:text-lg py-3 px-6 rounded">
-  Test Mobile Prototype
-</button>
-
+            Test Mobile Prototype
+          </button>
         </div>
 
-        <div className="flex items-start  gap-2 mt-4 justify-center lg:justify-start">
-          <img className="w-5 h-5" src="/images/info-circle.png" alt="info icon" />
-          <small className=" font-lato text-sm sm:text-base md:text-lg max-w-[350px] sm:max-w-[450px] md:max-w-[600px] font-lato">
+        <div className="flex items-start gap-2 mt-4 justify-center lg:justify-start">
+          <img className="w-5 h-5" src={`${process.env.PUBLIC_URL}/images/info-circle.png`} alt="info icon" />
+          <small className="font-lato text-sm sm:text-base md:text-lg max-w-[350px] sm:max-w-[450px] md:max-w-[600px]">
             For proper functioning of the prototype, the test must be carried out on desktop.
           </small>
         </div>
@@ -35,13 +34,13 @@ const Hero = () => {
       <div className="relative mt-10 lg:mt-0 flex justify-center">
         <div className="relative">
           <img
-            className=" object-cover"
-            src="/images/calender.png"
+            className="object-cover"
+            src={`${process.env.PUBLIC_URL}/images/calender.png`}
             alt="Calendar"
           />
           <img
             className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 w-[350px] object-cover"
-            src="/images/animi.png"
+            src={`${process.env.PUBLIC_URL}/images/animi.png`}
             alt="Lady"
           />
         </div>
