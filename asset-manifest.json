@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/OikusDatLtd/Landing.git/static/css/main.40b13137.css",
-    "main.js": "/OikusDatLtd/Landing.git/static/js/main.53a2311d.js",
-    "static/js/453.165597c2.chunk.js": "/OikusDatLtd/Landing.git/static/js/453.165597c2.chunk.js",
-    "index.html": "/OikusDatLtd/Landing.git/index.html",
-    "main.40b13137.css.map": "/OikusDatLtd/Landing.git/static/css/main.40b13137.css.map",
-    "main.53a2311d.js.map": "/OikusDatLtd/Landing.git/static/js/main.53a2311d.js.map",
-    "453.165597c2.chunk.js.map": "/OikusDatLtd/Landing.git/static/js/453.165597c2.chunk.js.map"
+    "main.css": "/static/css/main.40b13137.css",
+    "main.js": "/static/js/main.182af6fe.js",
+    "static/js/453.165597c2.chunk.js": "/static/js/453.165597c2.chunk.js",
+    "index.html": "/index.html",
+    "main.40b13137.css.map": "/static/css/main.40b13137.css.map",
+    "main.182af6fe.js.map": "/static/js/main.182af6fe.js.map",
+    "453.165597c2.chunk.js.map": "/static/js/453.165597c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.40b13137.css",
-    "static/js/main.53a2311d.js"
+    "static/js/main.182af6fe.js"
   ]
 }
