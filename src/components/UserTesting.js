@@ -32,18 +32,16 @@ const UserTesting = () => {
               className="mb-4 mx-auto md:mx-0"
             />
             <h4 className="font-polysans font-semibold text-[22px] md:text-[24px] leading-[30px]">
-              Select a Platform
+              Go To The Test Environment
             </h4>
             <ul className="list-disc pl-5 text-left font-lato font-normal text-[16px] leading-[24px] max-w-[90%] md:max-w-[80%] mx-auto md:mx-0">
-              <li>Web Prototype: Click on the "Test Web Prototype" button to access our web-based interface.</li>
-              <li>Mobile Prototype: Click on the "Test Mobile Prototype" button to explore our mobile app interface.</li>
+              <li>Click on the "Test Prototype" button and you will be redirected to the maze testing environment.</li>
+              <li>After a couple of seconds, you can click the “Get Started” button to begin.</li>
             </ul>
             <div className="mt-4 flex flex-wrap gap-4 justify-center md:justify-start font-lato">
-              <button className="bg-primaryColor text-white px-6 py-3 rounded">
-                Test Web Prototype
-              </button>
+               
               <button className="border-2 border-primaryColor text-primaryColor px-6 py-3 rounded">
-                Test Mobile Prototype
+                Test Prototype
               </button>
             </div>
           </div>
@@ -95,8 +93,8 @@ const UserTesting = () => {
               Provide Feedback
             </h4>
             <ul className="list-disc pl-5 text-left font-lato font-normal text-[16px] leading-[24px] max-w-[90%] md:max-w-[80%] mx-auto md:mx-0">
-              <li>After testing, click on the "Take the Survey" button to share your thoughts.</li>
-              <li>Complete the brief survey to help us understand your experience and identify areas for improvement.</li>
+              <li>After testing, complete the brief survey to help us understand your experience and identify areas for improvement.</li>
+              
             </ul>
           </div>
         </div>

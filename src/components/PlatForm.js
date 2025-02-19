@@ -20,9 +20,9 @@ const WhoAreWe = () => {
 
   return (
     <section className="py-16 px-6 mb-10">
-      <div className="max-w-[1258px] mx-auto text-center">
+      <div className="max-w-[1258px] mx-auto">
         {/* Header Section */}
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto text-center">
           <small className="text-sm font-polysans font-semibold">WHO ARE WE</small>
           <h2 className="text-2xl md:text-3xl font-polysans font-semibold mt-2">
             All In One Real Estate Platform
@@ -45,30 +45,35 @@ const WhoAreWe = () => {
 
           {/* Features List */}
           <div className="w-full md:w-[500px] font-lato font-normal">
-            <ul className="space-y-4"> {/* This adds space between each item */}
+            <ul className="space-y-4">
               {writeUps.map((item, index) => (
                 <li
                   key={item.id}
-                  className={`flex flex-col items-start py-4 px-5 rounded-lg border transition-all duration-300 cursor-pointer ${
+                  className={`grid grid-cols-[40px_1fr] gap-3 items-start py-4 px-5 rounded-lg border transition-all duration-300 cursor-pointer ${
                     selectedIndex === index
                       ? "bg-primaryColor text-white border-primaryColor"
                       : "bg-white text-black border-gray-300"
                   }`}
                   onClick={() => setSelectedIndex(index)}
                 >
-                  <div className="flex items-center">
+                  {/* Image Column */}
+                  <div className="w-10">
                     <img
                       src={item.image}
                       alt="Icon"
-                      className={`me-3 transition-all duration-300 ${
+                      className={`w-8 h-8 transition-all duration-300 ${
                         selectedIndex === index ? "filter brightness-0 invert" : ""
                       }`}
                     />
-                    <span className="font-normal text-lg">{item.title}</span>
                   </div>
-                  {selectedIndex === index && (
-                    <p className="mt-2 text-sm">{item.content}</p>
-                  )}
+
+                  {/* Title + Content Column */}
+                  <div className="flex flex-col">
+                    <span className="font-normal text-lg">{item.title}</span>
+                    {selectedIndex === index && (
+                      <p className="mt-2 text-sm">{item.content}</p>
+                    )}
+                  </div>
                 </li>
               ))}
             </ul>
