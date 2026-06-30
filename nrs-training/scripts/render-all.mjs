@@ -15,7 +15,7 @@ for (const ep of episodes) {
   console.log(`\n🎬 Rendering ${id}...`);
   try {
     execSync(
-      `npx remotion render src/index.ts ${id} out/${id}.mp4 --codec=h264`,
+      `npx remotion render src/index.ts ${id} out/${id}.mp4 --codec=h264 --browser-executable=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell`,
       { stdio: 'inherit' }
     );
     console.log(`✅ ${id} rendered successfully`);
