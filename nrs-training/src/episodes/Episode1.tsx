@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, Sequence, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig } from 'remotion';
 import { NRS, FPS } from '../constants';
 import { TitleCard } from '../components/TitleCard';
 import { Amara } from '../components/Amara';
@@ -40,6 +40,11 @@ export const Episode1: React.FC = () => {
           <AbsoluteFill style={{ background: NRS.greenDark, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 20 }}>
             <NRSLogo size={180} animateIn delay={5} showTagline />
           </AbsoluteFill>
+        </Sequence>
+
+        {/* Voiceover */}
+        <Sequence from={TITLE_DURATION + LOGO_DURATION}>
+          <Audio src={staticFile('audio/ep01.mp3')} />
         </Sequence>
 
         {/* Main content */}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, Sequence, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig } from 'remotion';
 import { FPS } from '../constants';
 import { TitleCard } from '../components/TitleCard';
 import { Amara } from '../components/Amara';
@@ -30,6 +30,10 @@ export const Episode9: React.FC = () => {
       <AbsoluteFill>
         <Sequence from={0} durationInFrames={TITLE_DURATION}>
           <TitleCard episodeNumber={9} title="Health, Wellness & Family" durationFrames={TITLE_DURATION} />
+        </Sequence>
+
+        <Sequence from={TITLE_DURATION}>
+          <Audio src={staticFile('audio/ep09.mp3')} />
         </Sequence>
 
         <Sequence from={TITLE_DURATION}>
